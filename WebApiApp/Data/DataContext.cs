@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using WebApiApp.Models;
+using WebApiApp.Entities;
 
 namespace WebApiApp.Data
 {
@@ -16,5 +16,9 @@ namespace WebApiApp.Data
         }
 
         public DbSet<Todo> Todos { get; set; }
+
+        public DbSet<Shop> Shops { get; set; }
+
+        public DbSet<ShopItem> ShopItems { get; set; }
     }
 }

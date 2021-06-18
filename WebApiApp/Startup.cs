@@ -27,8 +27,9 @@ namespace WebApiApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddAutoMapper(typeof(Startup));
             var DCS = Configuration.GetConnectionString("DefaultConnectionString");
-            services.AddSingleton<DataService>();
+            //services.AddSingleton<DataService>();
             services.AddDbContext<DataContext>(d => d.UseSqlServer(DCS));
             services.AddControllers();
 

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using WebApiApp.Data;
-using WebApiApp.Models;
+using WebApiApp.Entities;
 
 namespace WebApiApp.Controllers
 {
